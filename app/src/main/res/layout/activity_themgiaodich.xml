@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8sp"
+    android:background="@color/Orange1"
+    tools:context=".ThemgiaodichActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:text="THÊM GIAO DỊCH"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/assignment" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="Tài Khoản   "
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spintk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/loaigiaodich" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="Loại giao dịch"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinloaigd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/tien" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="Số tiền"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edsotien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:ems="10"
+                    android:hint="Nhập số tiền"
+                    android:inputType="number">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/hoi" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/Orange2"
+                    android:padding="5dp"
+                    android:text="Lý do"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edlydo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:ems="10"
+                    android:hint="Nhập lý do giao dịch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/group" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/Orange2"
+                    android:padding="5dp"
+                    android:text="Nhóm"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinphannhom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/trangthai" />
+
+                <TextView
+                    android:id="@+id/trangthaigd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/Orange2"
+                    android:padding="5dp"
+                    android:text="Trạng thái giao dịch"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spintrangthai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Orange2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/alarm" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/Orange2"
+                    android:padding="5dp"
+                    android:text="Ngày Giao dịch"
+                    android:textColor="#000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <EditText
+                        android:id="@+id/etngaygiaodich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15sp"
+                        android:ems="10"
+                        android:hint="Ngày giao dịch"
+                        android:inputType="date"
+                        android:textColor="#000"></EditText>
+
+                    <ImageView
+                        android:id="@+id/imageViewxx"
+                        android:layout_width="50dp"
+                        android:layout_height="39dp"
+                        android:layout_alignStart="@+id/etngaygiaodich"
+                        android:layout_alignLeft="@+id/etngaygiaodich"
+                        android:layout_alignBottom="@+id/etngaygiaodich"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="7dp"
+                        android:padding="2dp"
+                        android:src="@drawable/calendar_picker" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/savegd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5sp"
+                    android:background="#646464"
+                    android:padding="10dp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:text="Lưu"
+                    android:textColor="@color/Orange1" />
+
+
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
